@@ -1,0 +1,139 @@
+
+# Response Device Terms Collection
+
+## Structure
+
+`ResponseDeviceTermsCollection`
+
+## Fields
+
+| Name | Type | Tags | Description |
+|  --- | --- | --- | --- |
+| `type` | `string` | Required, Constant | Resource Type<br>**Default**: `'DeviceTermsCollection'` |
+| `list` | [`List4[]`](../../doc/models/list-4.md) | Required | Resource Members |
+| `links` | [`Links \| undefined`](../../doc/models/links.md) | Optional | Pagination page links |
+| `pagination` | [`Pagination \| undefined`](../../doc/models/pagination.md) | Optional | Pagination info |
+| `sort` | [`Sort \| undefined`](../../doc/models/sort.md) | Optional | Sort information used on the results |
+
+## Example (as JSON)
+
+```json
+{
+  "type": "DeviceTermsCollection",
+  "list": [
+    {
+      "location_id": "11e95f8ec39de8fbdb0a4f1a",
+      "terminal_id": "11e95f8ec39de8fbdb0a4f1a",
+      "require_signature": true,
+      "device_term_api_id": "device_term134",
+      "terms_conditions": "FUNgib0Vh0B9c0Wbttvr50vNtGLOkTdFL0eFmhN1RJpKhK14IENeDa8irp2dEk9thEcVHvVEyriQeZLs5NjNsCzqNj9JDA4RSJwK647IFtYjrNPN1nBb9bw6hoQ71oT5kpsiXGt8HcqBFVBVeDA7psIzKAyDveAw2o1hfjipkOtXrPgWun0rYwyyFuvqkT1egQYKfYDj",
+      "id": "11e95f8ec39de8fbdb0a4f1a",
+      "reason_code_id": 1000,
+      "created_ts": 1422040992,
+      "modified_ts": 1422040992,
+      "created_user_id": "11e95f8ec39de8fbdb0a4f1a",
+      "signature": {
+        "signature": "signature6",
+        "resource": "Recurring",
+        "resource_id": "resource_id4",
+        "id": "id8",
+        "created_ts": 80,
+        "modified_ts": 4
+      },
+      "created_user": {
+        "account_number": "account_number6",
+        "branding_domain_url": "branding_domain_url4",
+        "cell_phone": "cell_phone2",
+        "company_name": "company_name2",
+        "contact_id": "contact_id8",
+        "email": "email0",
+        "last_name": "last_name4",
+        "primary_location_id": "primary_location_id6",
+        "tz": "tz8",
+        "username": "username6",
+        "user_type_code": 300,
+        "id": "id6",
+        "status": false,
+        "login_attempts": 52,
+        "last_login_ts": 162,
+        "created_ts": 232,
+        "modified_ts": 52,
+        "created_user_id": "created_user_id8",
+        "current_date_time": "current_date_time6"
+      },
+      "location": {
+        "id": "id4",
+        "created_ts": 254,
+        "modified_ts": 178,
+        "account_number": "account_number6",
+        "address": {
+          "city": "city6",
+          "state": "state2",
+          "postal_code": "postal_code8",
+          "country": "US",
+          "street": "street6"
+        },
+        "branding_domain_id": "branding_domain_id8",
+        "contact_email_trx_receipt_default": false,
+        "default_ach": "default_ach8",
+        "name": "name4",
+        "parent_id": "parent_id0"
+      },
+      "terminal": {
+        "location_id": "location_id6",
+        "default_product_transaction_id": "default_product_transaction_id8",
+        "terminal_application_id": "terminal_application_id2",
+        "terminal_cvm_id": "terminal_cvm_id8",
+        "terminal_manufacturer_code": "1",
+        "title": "title2",
+        "mac_address": "mac_address0",
+        "local_ip_address": "local_ip_address4",
+        "port": 70,
+        "serial_number": "serial_number4",
+        "debit": false,
+        "emv": false,
+        "cashback_enable": false,
+        "print_enable": false,
+        "sig_capture_enable": false,
+        "id": "id2",
+        "created_ts": 130,
+        "modified_ts": 54,
+        "last_registration_ts": 10,
+        "created_user_id": "created_user_id6",
+        "modified_user_id": "modified_user_id6"
+      }
+    }
+  ],
+  "links": {
+    "type": "type4",
+    "first": "first0",
+    "previous": "previous2",
+    "last": "last4"
+  },
+  "pagination": {
+    "type": "type6",
+    "total_count": 100,
+    "page_count": 212,
+    "page_number": 28,
+    "page_size": 6
+  },
+  "sort": {
+    "type": "type2",
+    "fields": [
+      {
+        "field": "field2",
+        "order": "asc"
+      },
+      {
+        "field": "field2",
+        "order": "asc"
+      },
+      {
+        "field": "field2",
+        "order": "asc"
+      }
+    ]
+  }
+}
+```
+
